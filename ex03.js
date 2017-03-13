@@ -29,3 +29,8 @@ addition(98766, 345678);
 
 //  écrire votre code sous ce commentaire
 
+function addition(param1,param2){
+    return(param1+param2);
+}
+
+console.log(addition(98766, 345678));
