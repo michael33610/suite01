@@ -51,3 +51,18 @@ getHumanTypeByAge(33);
 getHumanTypeByAge(140);
 
 //  écrire votre code sous ce commentaire
+function getHumanTypeByAge(param){
+    if (param<0){
+        return("Inconcevable");
+    } else if (param<12){
+        return("Enfant");        
+    } else if (param<18) {
+        return("ado");
+    } else if (param<124){
+        return("Adulte");
+    } else {
+        return ("nous n'y somme pas encore");
+    }
+}
+
+console.log(getHumanTypeByAge(1100));
