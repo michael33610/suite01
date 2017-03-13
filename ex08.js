@@ -30,4 +30,21 @@ isAllEven([4, 5, 6]);
 isAllEven([4, 4, 6, 8, 10, 12]);
 
 //  écrire votre code sous ce commentaire
+function isAllEven(param){
+    console.log("param "+param+" lg="+param.length)
+    for(nb of param){
+        if (isEven(nb)==0){
+            return(0);  
+        }
+    }
+    return(1);
+}
 
+
+function isEven(nb){
+    var ret=(nb%2==0?1:0);
+    return(ret);
+}
+
+
+console.log(isAllEven([0,1,4,10]))
