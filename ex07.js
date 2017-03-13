@@ -22,3 +22,11 @@ boostedAddition([4, 5, 6]);
 boostedAddition([4, 4, 6, 8, 10, 12]);
 
 //  écrire votre code sous ce commentaire
+
+function boostedAddition(param){
+    var resu=0;
+    for(let i=0; i<param.length; resu+=param[i++]);
+    return(resu);
+}
+
+console.log(boostedAddition([1,2,3]));
