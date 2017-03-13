@@ -45,6 +45,7 @@ shoppingList([
 ]);
 
 //  écrire votre code sous ce commentaire
+/*
 function shoppingList(param){
     var resultat={};
     for (i=0;i<param.length;i++){
@@ -60,6 +61,20 @@ function shoppingList(param){
             }
         }
         //console.log(resultat);
+    }
+    return (resultat);
+}*/
+
+function shoppingList(param){
+    var resultat={};
+    for (i=0;i<param.length;i++){
+        for (j=0;j<param[i].length;j++){
+            if (resultat.hasOwnProperty(param[i][j])==true){
+                resultat[param[i][j]]++;
+            } else {
+                resultat[param[i][j]]=1;
+            }
+        }
     }
     return (resultat);
 }
