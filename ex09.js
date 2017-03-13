@@ -22,3 +22,13 @@ boostedEvenAddition([4, 5, 6]);
 boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]);
 
 //  écrire votre code sous ce commentaire
+function boostedEvenAddition(param){
+    var resu=0;
+    for(nb of param){
+        if (nb%2==0){
+            resu+=nb;
+        }
+    }
+    return(resu);
+}
+console.log(boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]));
