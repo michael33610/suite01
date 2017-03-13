@@ -51,7 +51,6 @@ function shoppingList(param){
         var tab=param[i];
         var fruitTrouve=false;
         for (j in tab){
-            console.log(tab[j]);
             var fruit=tab[j];
             fruitTrouve=resultat.hasOwnProperty(fruit);
             if (fruitTrouve==true){
@@ -60,8 +59,9 @@ function shoppingList(param){
                 resultat[fruit]=1;
             }
         }
-        console.log(resultat);
+        //console.log(resultat);
     }
+    return (resultat);
 }
 
 console.log(shoppingList([
