@@ -45,3 +45,30 @@ shoppingList([
 ]);
 
 //  écrire votre code sous ce commentaire
+function shoppingList(param){
+    var resultat={};
+    for (i=0;i<param.length;i++){
+        var tab=param[i];
+        var fruitTrouve=false;
+        for (j in tab){
+            console.log(tab[j]);
+            var fruit=tab[j];
+            fruitTrouve=resultat.hasOwnProperty(fruit);
+            if (fruitTrouve==true){
+                var cpt=resultat[fruit]++;
+            } else {   
+                resultat[fruit]=1;
+            }
+        }
+        console.log(resultat);
+    }
+}
+
+console.log(shoppingList([
+    ["orange", "orange", "kiwi", "ananas"],
+    ["kiwi", "ananas", "banane", "prune"],
+    ["orange", "orange", "orange", "orange"],
+    ["orange", "orange", "kiwi", "kiwi"],
+    ["prune", "banane", "pamplemousse", "ananas"]
+]));
+
