@@ -24,3 +24,8 @@ isEvenConcat(6);
 isEvenConcat(5);
 
 //  écrire votre code sous ce commentaire
+function isEvenConcat(param){
+    return(param%2==0?param+" est pair":param+" est impair");
+}
+
+console.log(isEvenConcat(5));
