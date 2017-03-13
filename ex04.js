@@ -24,3 +24,9 @@ isEven(6);
 isEven(5);
 
 //  écrire votre code sous ce commentaire
+function isEven(param){
+    var ret=(param%2==0?1:0);
+    return(ret);
+}
+
+console.log(isEven(5));
